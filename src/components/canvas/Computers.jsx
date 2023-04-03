@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react'
 const Computers = ({isMobile}) => {
     const computer = useGLTF('./desktop_pc/scene.gltf')
   return (
-    <mesh scale={0.7}>
+    <mesh >
         <hemisphereLight intensity={0} groundColor="grey"/>
         <spotLight
             position={[-20,50,10]}
@@ -19,8 +19,8 @@ const Computers = ({isMobile}) => {
         />
         <primitive
             object={computer.scene} 
-            scale={isMobile ? 0.9 :1.2}
-            position={isMobile ? [1.2, -1.3, 1] :[0,-2,0.4]}
+            scale={isMobile ? 0.5 :1.2}
+            position={isMobile ? [0.2, -1.3, 1] :[0,-2,0.4]}
             rotation={[0, -0.8 , 0.1]}
         />
     </mesh>

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  .border-gradient{
+    border-color: linear-gradient(to right, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
+  }
+
+  .slide_in{
+    animation: slideMe .7s ease-in;
+  }
+
+  @keyframes slideMe {
+    0%{
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    100%{
+      opacity: 1;
+      transform: skew(0deg);
+    }
+  }

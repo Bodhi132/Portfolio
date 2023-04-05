@@ -19,7 +19,7 @@ const ServiceCard = ({title,icon})=>{
 
 const About = () => {
     return (
-        <>
+        <div>
             <motion.div
                 className='sm:px-24'
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -55,7 +55,7 @@ const About = () => {
                     <ServiceCard key={service.title}  {...service}/>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 

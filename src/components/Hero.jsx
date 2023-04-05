@@ -1,10 +1,11 @@
 import React from 'react'
 import ComputerCanvas from './canvas/Computers'
 import { motion } from 'framer-motion'
+import { myImage } from '../assets'
 
 const Hero = () => {
     return (
-        <section className='relative w-full h-screen mx-auto'>
+        <section className='relative w-full sm:h-screen h-[55vh] mx-auto'>
             <div className='sm:px-16 p-6 flex flex-row absolute inset-0 max-w-7xl top-[3rem] items-start gap-5'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='w-5 h-5 rounded-full bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500' />
@@ -19,14 +20,18 @@ const Hero = () => {
                     <p className='sm:text-[1.5rem] '>I develop Web Applications and <br className='sm:block hidden' />User Interfaces</p>
                 </div>
             </div>
-            <ComputerCanvas/>
+            
+            {/* <ComputerCanvas/> */}
+            <div className='absolute sm:left-[30rem] sm:top-[13rem] top-[8rem] left-[4rem] '>
+                <img src={myImage} alt="" className='sm:h-[350px] h-[300px]'/>
+            </div>
 
-            <div className='absolute xs:bottom-[8rem] bottom-[10rem] right-12 sm:right-0 w-full flex justify-center items-center '
+            <div className='absolute sm:bottom-[8rem] bottom-[2rem] right-9  w-full flex justify-center items-center '
             onClick={()=>{
                 window.scrollTo(0, 700);
             }}>
                 <a href="#about">
-                    <div className='w-[45px] h-[85px] rounded-3xl border-slate-400 border-4 flex justify-center items-start p-2'>
+                    <div className='w-[45px] h-[85px] rounded-3xl border-slate-400 border-4 flex justify-center items-start p-2 ml-[5rem] '>
                         <motion.div
                         animate={{
                             y:[0,45,0]

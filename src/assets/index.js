@@ -23,6 +23,7 @@ import workoutappui from './workoutappui.png'
 import Looked from './Looked.png'
 import github from './github.png'
 import others from './otherprojects.png'
+import myImage from './myImage.png'
 
 export {logo,close,menu,web,backend,ui,meta,shopify,starbucks,tesla,css,figma,html,javascript,mongodb,reactjs,redux,
-    tailwind,nodejs,threejs,git,workoutappui,Looked,github,others}
+    tailwind,nodejs,threejs,git,workoutappui,Looked,github,others,myImage}
